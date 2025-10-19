@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisao</title>
+</head>
+
+<body>
+
+    <h1>Adicionar Link Externo</h1>
+    <a href="https://www.google.com.br/" target="_blank" rel="noopener noreferrer">Clique Aqui</a>
+    <h2>Link que ira substituir a pagina atual</h2>
+    <a href="https://www.google.com.br/" target="_self">Clique aqui</a>
+
+    <h1>Adicionar Link Interno (mudar de pagina)</h1>
+    <a href="index2.html" target="_blank">Clique aqui para ir para a página 2</a>
+
+    <h1>Fazer o download de uma imagem</h1>
+
+    <a href="midia/photo-1533450718592-29d45635f0a9.jpeg" download="minha-foto.jpeg" type="application/jpeg">Download da
+        imagem</a>
+
+    <h1>Hospedar Video</h1>
+    <video src="meu-video (1).mp4" autoplay width="600" controls></video>
+
+    <h1>hospedar diferentes tipos de formato</h1>
+    <video>
+        <!--Desta forma se o video for de diferentes tipos de formato ele suporta, mas isso deixa o site bem pesado.-->
+        <source src="meu-video (1).mp4" type="video/mp4">
+        <source src="meu-video (1).mp4" type="video/webm">
+        <source src="meu-video (1).mp4" type="video/ogg">
+    </video>
+
+    <h1>Colocar audio</h1>
+    <audio src="On The Flip - The Grey Room _ Density & Time.mp3" autoplay controls></audio>
+
+    <h1>Imagem se remendisionar automaticamente.</h1>
+
+    <picture>
+
+        <source media="(max-width: 600px)">
+        <img src="midia/photo-1533450718592-29d45635f0a9" alt="">
+        
+    </picture>
+
+</body>
+
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias Em Html5</title>
+</head>
+
+<body>
+
+    <h1>Teste Imagens Dinamicas</h1>
+
+    <picture>
+
+        <!--Se foto p for ate 500 ele executa, se for maior da false e passa para proximo-->
+        <source media="(max-width: 500px)" srcset="tamanhoTelas/foto-p.png">
+
+        <!--Se for entre 500 e no maximo 1000 executa, se for maior que 1000 da false e vai para proximo-->
+        <source media="(min-width: 500px) and (max-width: 1000px)" srcset="tamanhoTelas/foto-m.png">
+
+        <!-- Se as duas de cima for false, essa executa-->
+        <img src="tamanhoTelas/foto-g.png" alt="">
+        
+    </picture>
+
+</body>
+
+</html>
